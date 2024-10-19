@@ -1,0 +1,39 @@
+#use to save cpu, ram, total player, numbers of server
+#only support mysql, default port: 3306
+database:
+  enable: true
+  host: localhost
+  port: 3306
+  name: minecraft
+  user: root
+  password: yourpassword
+
+#windows or linux
+os: windows
+
+# your server.jar name
+server_jar_name: server.jar
+
+#the path you want the auto start/stop script file be generated
+#must be the folder with server.jar
+script_path: ../
+
+# RCON setting
+# make sure to turn rcon to true on the server.properties
+rcon:
+  host: localhost
+  port: 25575
+  password: your_rcon_password
+
+# SSH connection
+ssh:
+  host: remote-host
+  user: your-username
+  password: your-password
+  port: 22
+  start_command: "bash /path/to/start_server.sh"
+
+# BungeeCord configuration
+bungee:
+  host: bungeecord-address
+  port: 25570
